@@ -1,0 +1,155 @@
+html {
+	background-color: #333;
+}
+*, html, h1, strong, b {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+.container {
+    margin-left: auto;
+	margin-right: auto;
+}
+#npg-header {
+	display: block;
+	margin: 60px auto 40px;
+	text-align: center;
+	color: #aaa;
+	font-size: 25px;
+	line-height: 1;
+}
+#npg-header span {
+	font-size: 12px;
+}
+.column_left {
+	width: 70%;
+	float: left;
+}
+.column_right {
+	width: 30%;
+	float: right;
+}
+#npg-container {
+	display: block;
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.npg-row {
+    margin: 0;
+    width: 100%;
+    display: table;
+    clear: both;
+}
+.npg-pixel {
+    display: table-cell;
+	padding-top: 7%;
+	cursor: pointer;
+	background-color: #333;
+	box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 1);
+	box-sizing: border-box;
+	transition: background-color 0.05s ease-in;
+}
+
+.npg-row:first-child .npg-pixel {
+	box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 1),
+		inset 0 1px 0 0 rgba(0, 0, 0, 1);
+}
+
+.npg-row .npg-pixel:first-child {
+	box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 1),
+		inset 1px 0 0 0 rgba(0, 0, 0, 1);
+}
+
+.npg-row:first-child .npg-pixel:first-child {
+	box-shadow: inset -1px -1px 0 0 rgba(0, 0, 0, 1),
+		inset 1px 1px 0 0 rgba(0, 0, 0, 1);
+}
+
+/* ---------------------------------- COLOR PALLETE ---------------------------------- */
+
+#npg-color-pallete {
+	display: block;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.color-group {
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+.color-block {
+    float: left;
+    display: block;
+    position: relative;
+    width: 10%;
+    padding-bottom: 17px;
+}
+.color-pixel {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.color-pixel:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.color-pixel.active {
+	box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 1);
+}
+
+/* ---------------------------------- CTA ---------------------------------- */
+
+.clear {
+	clear: both;
+	padding: 20px;
+}
+
+#generate-code {
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	padding: 10px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #666;
+}
+
+/* ---------------------------------- OUTPUT ---------------------------------- */
+
+#npg-output div {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	max-width: 500px;
+	border: 1px solid #fff;
+	padding: 20px;
+	color: #eee;
+	font-size: 11px;
+	line-height: 1;
+}
