@@ -3,7 +3,9 @@ NeoMatrix Generator
 
 Arduino NeoMatrix (NeoPixel) VISIWIG graphics editor.
 
-![Demo Shot](/screenshot.jpg)
+![The Box](/screenshot.jpg)
+![PCB](/pcb_screenshot.jpg)
+
 
 The part of [Opportunity-3000 project](https://github.com/cesnokov/Opportunity-3000).
 
